@@ -124,6 +124,13 @@ MONGODB_URI=YOUR_MONGODB_URI
 
 ```
 
+Create a `.env` file inside the Frontend folder.
+
+```
+VITE_API_URL=http://localhost:4000/api
+
+```
+
 ---
 
 # 🔄 Workflow
