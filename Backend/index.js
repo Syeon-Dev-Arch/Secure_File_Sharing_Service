@@ -14,7 +14,15 @@ const PORT = process.env.PORT || 3000;
 app.use(express.json());
 connectDB();
 
-app.use(cors());
+app.use(
+  cors({
+    origin: [
+      "http://localhost:5173",
+      "https://secure-file-sharing-service-d7cu.vercel.app",
+    ],
+    credentials: true,
+  }),
+);
 
 app.use("/api/files", fileRoutes);
 app.use("/api/cron", cronRoutes);

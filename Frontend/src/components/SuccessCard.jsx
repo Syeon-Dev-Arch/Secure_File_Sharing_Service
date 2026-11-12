@@ -4,8 +4,8 @@ function SuccessCard({ result, resetForm }) {
   const [copied, setCopied] = useState(false);
 
   const frontendLink = result.downloadingLink.replace(
-    "http://localhost:4000",
-    "http://localhost:5173",
+    /https?:\/\/[^/]+/,
+    window.location.origin,
   );
 
   const copyLink = async () => {
