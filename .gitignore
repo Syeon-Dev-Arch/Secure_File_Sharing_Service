@@ -1,0 +1,28 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Environment files
+.env
+
+# Build
+dist
+build
+
+# VS Code
+.vscode/
+
+# Node Modules
+node_modules/
+
+# Vite
+.vite/
+
+# Coverage
+coverage/
+
+# Cache
+.cache/
