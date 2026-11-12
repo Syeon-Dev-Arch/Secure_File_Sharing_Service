@@ -18,7 +18,7 @@ app.use(
   cors({
     origin: [
       "http://localhost:5173",
-      "https://secure-file-sharing-service-d7cu.vercel.app",
+      "https://secure-file-sharing-service-d7cu-3qtule2ul-syeon1.vercel.app",
     ],
     credentials: true,
   }),
