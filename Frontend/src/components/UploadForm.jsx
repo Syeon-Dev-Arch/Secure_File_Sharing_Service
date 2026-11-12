@@ -1,6 +1,7 @@
 import { useState } from "react";
 import axios from "axios";
 import SuccessCard from "./SuccessCard";
+import api from "../lib/axios.js";
 
 function UploadForm() {
   const [selectedFile, setSelectedFile] = useState(null);
@@ -25,10 +26,7 @@ function UploadForm() {
       formData.append("password", password);
       console.log(formData);
       setLoading(true);
-      const response = await axios.post(
-        "http://localhost:4000/api/files/upload",
-        formData,
-      );
+      const response = await api.post("/files/upload", formData);
       console.log(response);
 
       setResult(response.data.fileData);
